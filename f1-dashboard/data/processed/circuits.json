@@ -1,0 +1,2097 @@
+{
+  "circuits": [
+    {
+      "id": "albert-park-grand-prix-circuit",
+      "name": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "lat": -37.8497,
+      "lng": 144.968,
+      "locality": "Melbourne",
+      "total_races": 27,
+      "first_year": 1996,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 10
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 6
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 4
+        },
+        {
+          "constructor": "Renault",
+          "wins": 2
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "sepang-international-circuit",
+      "name": "Sepang International Circuit",
+      "country": "Malaysia",
+      "lat": 2.76083,
+      "lng": 101.738,
+      "locality": "Kuala Lumpur",
+      "total_races": 19,
+      "first_year": 1999,
+      "last_year": 2017,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 7
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 5
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Renault",
+          "wins": 2
+        },
+        {
+          "constructor": "Williams",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "bahrain-international-circuit",
+      "name": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "lat": 26.0325,
+      "lng": 50.5106,
+      "locality": "Sakhir",
+      "total_races": 21,
+      "first_year": 2004,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 7
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 6
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 4
+        },
+        {
+          "constructor": "Renault",
+          "wins": 2
+        },
+        {
+          "constructor": "Brawn",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "circuit-de-barcelona-catalunya",
+      "name": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "lat": 41.57,
+      "lng": 2.26111,
+      "locality": "Montmeló",
+      "total_races": 34,
+      "first_year": 1991,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 8
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 7
+        },
+        {
+          "constructor": "Williams",
+          "wins": 6
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 6
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 4
+        }
+      ]
+    },
+    {
+      "id": "istanbul-park",
+      "name": "Istanbul Park",
+      "country": "Turkey",
+      "lat": 40.9517,
+      "lng": 29.405,
+      "locality": "Istanbul",
+      "total_races": 9,
+      "first_year": 2005,
+      "last_year": 2021,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 3
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 2
+        },
+        {
+          "constructor": "Brawn",
+          "wins": 1
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "circuit-de-monaco",
+      "name": "Circuit de Monaco",
+      "country": "Monaco",
+      "lat": 43.7347,
+      "lng": 7.42056,
+      "locality": "Monte-Carlo",
+      "total_races": 70,
+      "first_year": 1950,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 15
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 10
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 7
+        },
+        {
+          "constructor": "BRM",
+          "wins": 5
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 5
+        }
+      ]
+    },
+    {
+      "id": "circuit-gilles-villeneuve",
+      "name": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "lat": 45.5,
+      "lng": -73.5228,
+      "locality": "Montreal",
+      "total_races": 43,
+      "first_year": 1978,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 11
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 9
+        },
+        {
+          "constructor": "Williams",
+          "wins": 7
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 5
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 4
+        }
+      ]
+    },
+    {
+      "id": "circuit-de-nevers-magny-cours",
+      "name": "Circuit de Nevers Magny-Cours",
+      "country": "France",
+      "lat": 46.8642,
+      "lng": 3.16361,
+      "locality": "Magny Cours",
+      "total_races": 18,
+      "first_year": 1991,
+      "last_year": 2008,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 8
+        },
+        {
+          "constructor": "Williams",
+          "wins": 5
+        },
+        {
+          "constructor": "Benetton",
+          "wins": 2
+        },
+        {
+          "constructor": "Renault",
+          "wins": 1
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "silverstone-circuit",
+      "name": "Silverstone Circuit",
+      "country": "UK",
+      "lat": 52.0786,
+      "lng": -1.01694,
+      "locality": "Silverstone",
+      "total_races": 59,
+      "first_year": 1950,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 15
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 12
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 9
+        },
+        {
+          "constructor": "Williams",
+          "wins": 8
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 5
+        }
+      ]
+    },
+    {
+      "id": "hockenheimring",
+      "name": "Hockenheimring",
+      "country": "Germany",
+      "lat": 49.3278,
+      "lng": 8.56583,
+      "locality": "Hockenheim",
+      "total_races": 37,
+      "first_year": 1970,
+      "last_year": 2019,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 11
+        },
+        {
+          "constructor": "Williams",
+          "wins": 9
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 6
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 3
+        },
+        {
+          "constructor": "Benetton",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "hungaroring",
+      "name": "Hungaroring",
+      "country": "Hungary",
+      "lat": 47.5789,
+      "lng": 19.2486,
+      "locality": "Budapest",
+      "total_races": 39,
+      "first_year": 1986,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 12
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 7
+        },
+        {
+          "constructor": "Williams",
+          "wins": 7
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 5
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 4
+        }
+      ]
+    },
+    {
+      "id": "valencia-street-circuit",
+      "name": "Valencia Street Circuit",
+      "country": "Spain",
+      "lat": 39.4589,
+      "lng": -0.331667,
+      "locality": "Valencia",
+      "total_races": 5,
+      "first_year": 2008,
+      "last_year": 2012,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 2
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 2
+        },
+        {
+          "constructor": "Brawn",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "circuit-de-spa-francorchamps",
+      "name": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "lat": 50.4372,
+      "lng": 5.97139,
+      "locality": "Spa",
+      "total_races": 57,
+      "first_year": 1950,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 14
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 11
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 6
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 6
+        },
+        {
+          "constructor": "Lotus-Climax",
+          "wins": 4
+        }
+      ]
+    },
+    {
+      "id": "autodromo-nazionale-di-monza",
+      "name": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "lat": 45.6156,
+      "lng": 9.28111,
+      "locality": "Monza",
+      "total_races": 74,
+      "first_year": 1950,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 20
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 10
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 7
+        },
+        {
+          "constructor": "Williams",
+          "wins": 6
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 4
+        }
+      ]
+    },
+    {
+      "id": "marina-bay-street-circuit",
+      "name": "Marina Bay Street Circuit",
+      "country": "Singapore",
+      "lat": 1.2914,
+      "lng": 103.864,
+      "locality": "Marina Bay",
+      "total_races": 15,
+      "first_year": 2008,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 4
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 4
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 4
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Renault",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "fuji-speedway",
+      "name": "Fuji Speedway",
+      "country": "Japan",
+      "lat": 35.3717,
+      "lng": 138.927,
+      "locality": "Oyama",
+      "total_races": 4,
+      "first_year": 1976,
+      "last_year": 2008,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Renault",
+          "wins": 1
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "shanghai-international-circuit",
+      "name": "Shanghai International Circuit",
+      "country": "China",
+      "lat": 31.3389,
+      "lng": 121.22,
+      "locality": "Shanghai",
+      "total_races": 17,
+      "first_year": 2004,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Mercedes",
+          "wins": 6
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 4
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 3
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 3
+        },
+        {
+          "constructor": "Renault",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "aut-dromo-jos-carlos-pace",
+      "name": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "lat": -23.7036,
+      "lng": -46.6997,
+      "locality": "São Paulo",
+      "total_races": 41,
+      "first_year": 1973,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 9
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 8
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 7
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 6
+        },
+        {
+          "constructor": "Williams",
+          "wins": 4
+        }
+      ]
+    },
+    {
+      "id": "indianapolis-motor-speedway",
+      "name": "Indianapolis Motor Speedway",
+      "country": "USA",
+      "lat": 39.795,
+      "lng": -86.2347,
+      "locality": "Indianapolis",
+      "total_races": 19,
+      "first_year": 1950,
+      "last_year": 2007,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 6
+        },
+        {
+          "constructor": "Kurtis Kraft",
+          "wins": 5
+        },
+        {
+          "constructor": "Watson",
+          "wins": 3
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Epperly",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "n-rburgring",
+      "name": "Nürburgring",
+      "country": "Germany",
+      "lat": 50.3356,
+      "lng": 6.9475,
+      "locality": "Nürburg",
+      "total_races": 41,
+      "first_year": 1951,
+      "last_year": 2020,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 14
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 5
+        },
+        {
+          "constructor": "Williams",
+          "wins": 3
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 2
+        },
+        {
+          "constructor": "Tyrrell",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "autodromo-enzo-e-dino-ferrari",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "lat": 44.3439,
+      "lng": 11.7167,
+      "locality": "Imola",
+      "total_races": 31,
+      "first_year": 1980,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 8
+        },
+        {
+          "constructor": "Williams",
+          "wins": 8
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 6
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 3
+        },
+        {
+          "constructor": "Brabham",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "suzuka-circuit",
+      "name": "Suzuka Circuit",
+      "country": "Japan",
+      "lat": 34.8431,
+      "lng": 136.541,
+      "locality": "Suzuka",
+      "total_races": 34,
+      "first_year": 1987,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 7
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 7
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 7
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 6
+        },
+        {
+          "constructor": "Williams",
+          "wins": 3
+        }
+      ]
+    },
+    {
+      "id": "yas-marina-circuit",
+      "name": "Yas Marina Circuit",
+      "country": "UAE",
+      "lat": 24.4672,
+      "lng": 54.6031,
+      "locality": "Abu Dhabi",
+      "total_races": 16,
+      "first_year": 2009,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Red Bull",
+          "wins": 7
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 6
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Lotus F1",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "aut-dromo-juan-y-oscar-g-lvez",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "lat": -34.6943,
+      "lng": -58.4593,
+      "locality": "Buenos Aires",
+      "total_races": 20,
+      "first_year": 1953,
+      "last_year": 1998,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 4
+        },
+        {
+          "constructor": "Williams",
+          "wins": 4
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 2
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Maserati",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "circuito-de-jerez",
+      "name": "Circuito de Jerez",
+      "country": "Spain",
+      "lat": 36.7083,
+      "lng": -6.03417,
+      "locality": "Jerez de la Frontera",
+      "total_races": 7,
+      "first_year": 1986,
+      "last_year": 1997,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 3
+        },
+        {
+          "constructor": "Benetton",
+          "wins": 1
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 1
+        },
+        {
+          "constructor": "Williams",
+          "wins": 1
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "aut-dromo-do-estoril",
+      "name": "Autódromo do Estoril",
+      "country": "Portugal",
+      "lat": 38.7506,
+      "lng": -9.39417,
+      "locality": "Estoril",
+      "total_races": 13,
+      "first_year": 1984,
+      "last_year": 1996,
+      "win_leaders": [
+        {
+          "constructor": "Williams",
+          "wins": 6
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 3
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 2
+        },
+        {
+          "constructor": "Benetton",
+          "wins": 1
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "okayama-international-circuit",
+      "name": "Okayama International Circuit",
+      "country": "Japan",
+      "lat": 34.915,
+      "lng": 134.221,
+      "locality": "Okayama",
+      "total_races": 2,
+      "first_year": 1994,
+      "last_year": 1995,
+      "win_leaders": [
+        {
+          "constructor": "Benetton",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "adelaide-street-circuit",
+      "name": "Adelaide Street Circuit",
+      "country": "Australia",
+      "lat": -34.9272,
+      "lng": 138.617,
+      "locality": "Adelaide",
+      "total_races": 11,
+      "first_year": 1985,
+      "last_year": 1995,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 5
+        },
+        {
+          "constructor": "Williams",
+          "wins": 4
+        },
+        {
+          "constructor": "Benetton",
+          "wins": 1
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "kyalami",
+      "name": "Kyalami",
+      "country": "South Africa",
+      "lat": -25.9894,
+      "lng": 28.0767,
+      "locality": "Midrand",
+      "total_races": 20,
+      "first_year": 1967,
+      "last_year": 1993,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 4
+        },
+        {
+          "constructor": "Williams",
+          "wins": 3
+        },
+        {
+          "constructor": "Brabham",
+          "wins": 3
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Renault",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "donington-park",
+      "name": "Donington Park",
+      "country": "UK",
+      "lat": 52.8306,
+      "lng": -1.37528,
+      "locality": "Castle Donington",
+      "total_races": 1,
+      "first_year": 1993,
+      "last_year": 1993,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "aut-dromo-hermanos-rodr-guez",
+      "name": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "lat": 19.4042,
+      "lng": -99.0907,
+      "locality": "Mexico City",
+      "total_races": 24,
+      "first_year": 1963,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Red Bull",
+          "wins": 5
+        },
+        {
+          "constructor": "Williams",
+          "wins": 3
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 3
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 3
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "phoenix-street-circuit",
+      "name": "Phoenix street circuit",
+      "country": "USA",
+      "lat": 33.4479,
+      "lng": -112.075,
+      "locality": "Phoenix",
+      "total_races": 3,
+      "first_year": 1989,
+      "last_year": 1991,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 3
+        }
+      ]
+    },
+    {
+      "id": "circuit-paul-ricard",
+      "name": "Circuit Paul Ricard",
+      "country": "France",
+      "lat": 43.2506,
+      "lng": 5.79167,
+      "locality": "Le Castellet",
+      "total_races": 18,
+      "first_year": 1971,
+      "last_year": 2022,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 3
+        },
+        {
+          "constructor": "Williams",
+          "wins": 3
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 2
+        },
+        {
+          "constructor": "Renault",
+          "wins": 2
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "korean-international-circuit",
+      "name": "Korean International Circuit",
+      "country": "Korea",
+      "lat": 34.7333,
+      "lng": 126.417,
+      "locality": "Yeongam County",
+      "total_races": 4,
+      "first_year": 2010,
+      "last_year": 2013,
+      "win_leaders": [
+        {
+          "constructor": "Red Bull",
+          "wins": 3
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "aut-dromo-internacional-nelson-piquet",
+      "name": "Autódromo Internacional Nelson Piquet",
+      "country": "Brazil",
+      "lat": -22.9756,
+      "lng": -43.395,
+      "locality": "Rio de Janeiro",
+      "total_races": 10,
+      "first_year": 1978,
+      "last_year": 1989,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 4
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 2
+        },
+        {
+          "constructor": "Williams",
+          "wins": 2
+        },
+        {
+          "constructor": "Brabham",
+          "wins": 1
+        },
+        {
+          "constructor": "Renault",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "detroit-street-circuit",
+      "name": "Detroit Street Circuit",
+      "country": "USA",
+      "lat": 42.3298,
+      "lng": -83.0401,
+      "locality": "Detroit",
+      "total_races": 7,
+      "first_year": 1982,
+      "last_year": 1988,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 2
+        },
+        {
+          "constructor": "Williams",
+          "wins": 1
+        },
+        {
+          "constructor": "Brabham",
+          "wins": 1
+        },
+        {
+          "constructor": "Tyrrell",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "brands-hatch",
+      "name": "Brands Hatch",
+      "country": "UK",
+      "lat": 51.3569,
+      "lng": 0.263056,
+      "locality": "Kent",
+      "total_races": 14,
+      "first_year": 1964,
+      "last_year": 1986,
+      "win_leaders": [
+        {
+          "constructor": "Williams",
+          "wins": 3
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 2
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 2
+        },
+        {
+          "constructor": "Brabham",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "circuit-park-zandvoort",
+      "name": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "lat": 52.3888,
+      "lng": 4.54092,
+      "locality": "Zandvoort",
+      "total_races": 34,
+      "first_year": 1952,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 8
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 4
+        },
+        {
+          "constructor": "Lotus-Climax",
+          "wins": 3
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 3
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "zolder",
+      "name": "Zolder",
+      "country": "Belgium",
+      "lat": 50.9894,
+      "lng": 5.25694,
+      "locality": "Heusden-Zolder",
+      "total_races": 10,
+      "first_year": 1973,
+      "last_year": 1984,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 4
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 2
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        },
+        {
+          "constructor": "Williams",
+          "wins": 1
+        },
+        {
+          "constructor": "Ligier",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "dijon-prenois",
+      "name": "Dijon-Prenois",
+      "country": "France",
+      "lat": 47.3625,
+      "lng": 4.89913,
+      "locality": "Dijon",
+      "total_races": 6,
+      "first_year": 1974,
+      "last_year": 1984,
+      "win_leaders": [
+        {
+          "constructor": "Renault",
+          "wins": 2
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 2
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        },
+        {
+          "constructor": "Williams",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "fair-park",
+      "name": "Fair Park",
+      "country": "USA",
+      "lat": 32.7774,
+      "lng": -96.7587,
+      "locality": "Dallas",
+      "total_races": 1,
+      "first_year": 1984,
+      "last_year": 1984,
+      "win_leaders": [
+        {
+          "constructor": "Williams",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "long-beach",
+      "name": "Long Beach",
+      "country": "USA",
+      "lat": 33.7651,
+      "lng": -118.189,
+      "locality": "California",
+      "total_races": 8,
+      "first_year": 1976,
+      "last_year": 1983,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 3
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Williams",
+          "wins": 1
+        },
+        {
+          "constructor": "Brabham",
+          "wins": 1
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "las-vegas-street-circuit",
+      "name": "Las Vegas Street Circuit",
+      "country": "USA",
+      "lat": 36.1162,
+      "lng": -115.174,
+      "locality": "Nevada",
+      "total_races": 2,
+      "first_year": 1981,
+      "last_year": 1982,
+      "win_leaders": [
+        {
+          "constructor": "Tyrrell",
+          "wins": 1
+        },
+        {
+          "constructor": "Williams",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "jarama",
+      "name": "Jarama",
+      "country": "Spain",
+      "lat": 40.6171,
+      "lng": -3.58558,
+      "locality": "Madrid",
+      "total_races": 9,
+      "first_year": 1968,
+      "last_year": 1981,
+      "win_leaders": [
+        {
+          "constructor": "Team Lotus",
+          "wins": 3
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 2
+        },
+        {
+          "constructor": "Ligier",
+          "wins": 1
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        },
+        {
+          "constructor": "March",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "watkins-glen",
+      "name": "Watkins Glen",
+      "country": "USA",
+      "lat": 42.3369,
+      "lng": -76.9272,
+      "locality": "New York State",
+      "total_races": 20,
+      "first_year": 1961,
+      "last_year": 1980,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 3
+        },
+        {
+          "constructor": "BRM",
+          "wins": 3
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 2
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 2
+        },
+        {
+          "constructor": "Tyrrell",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "scandinavian-raceway",
+      "name": "Scandinavian Raceway",
+      "country": "Sweden",
+      "lat": 57.2653,
+      "lng": 13.6042,
+      "locality": "Anderstorp",
+      "total_races": 6,
+      "first_year": 1973,
+      "last_year": 1978,
+      "win_leaders": [
+        {
+          "constructor": "Tyrrell",
+          "wins": 2
+        },
+        {
+          "constructor": "Brabham",
+          "wins": 1
+        },
+        {
+          "constructor": "Ligier",
+          "wins": 1
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 1
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "mosport-international-raceway",
+      "name": "Mosport International Raceway",
+      "country": "Canada",
+      "lat": 44.0481,
+      "lng": -78.6756,
+      "locality": "Ontario",
+      "total_races": 8,
+      "first_year": 1967,
+      "last_year": 1977,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 3
+        },
+        {
+          "constructor": "Tyrrell",
+          "wins": 2
+        },
+        {
+          "constructor": "Wolf",
+          "wins": 1
+        },
+        {
+          "constructor": "Brabham-Ford",
+          "wins": 1
+        },
+        {
+          "constructor": "Brabham-Repco",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "montju-c",
+      "name": "Montjuïc",
+      "country": "Spain",
+      "lat": 41.3664,
+      "lng": 2.15167,
+      "locality": "Barcelona",
+      "total_races": 4,
+      "first_year": 1969,
+      "last_year": 1975,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 1
+        },
+        {
+          "constructor": "Tyrrell",
+          "wins": 1
+        },
+        {
+          "constructor": "Matra-Ford",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "nivelles-baulers",
+      "name": "Nivelles-Baulers",
+      "country": "Belgium",
+      "lat": 50.6211,
+      "lng": 4.32694,
+      "locality": "Brussels",
+      "total_races": 2,
+      "first_year": 1972,
+      "last_year": 1974,
+      "win_leaders": [
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "charade-circuit",
+      "name": "Charade Circuit",
+      "country": "France",
+      "lat": 45.7472,
+      "lng": 3.03889,
+      "locality": "Clermont-Ferrand",
+      "total_races": 4,
+      "first_year": 1965,
+      "last_year": 1972,
+      "win_leaders": [
+        {
+          "constructor": "Tyrrell",
+          "wins": 1
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 1
+        },
+        {
+          "constructor": "Matra-Ford",
+          "wins": 1
+        },
+        {
+          "constructor": "Lotus-Climax",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "circuit-mont-tremblant",
+      "name": "Circuit Mont-Tremblant",
+      "country": "Canada",
+      "lat": 46.1877,
+      "lng": -74.6099,
+      "locality": "Quebec",
+      "total_races": 2,
+      "first_year": 1968,
+      "last_year": 1970,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 1
+        },
+        {
+          "constructor": "McLaren-Ford",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "rouen-les-essarts",
+      "name": "Rouen-Les-Essarts",
+      "country": "France",
+      "lat": 49.3306,
+      "lng": 1.00458,
+      "locality": "Rouen",
+      "total_races": 5,
+      "first_year": 1952,
+      "last_year": 1968,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 2
+        },
+        {
+          "constructor": "Brabham-Climax",
+          "wins": 1
+        },
+        {
+          "constructor": "Porsche",
+          "wins": 1
+        },
+        {
+          "constructor": "Maserati",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "le-mans",
+      "name": "Le Mans",
+      "country": "France",
+      "lat": 47.95,
+      "lng": 0.224231,
+      "locality": "Le Mans",
+      "total_races": 1,
+      "first_year": 1967,
+      "last_year": 1967,
+      "win_leaders": [
+        {
+          "constructor": "Brabham-Repco",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "reims-gueux",
+      "name": "Reims-Gueux",
+      "country": "France",
+      "lat": 49.2542,
+      "lng": 3.93083,
+      "locality": "Reims",
+      "total_races": 11,
+      "first_year": 1950,
+      "last_year": 1966,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 5
+        },
+        {
+          "constructor": "Alfa Romeo",
+          "wins": 3
+        },
+        {
+          "constructor": "Brabham-Repco",
+          "wins": 1
+        },
+        {
+          "constructor": "Lotus-Climax",
+          "wins": 1
+        },
+        {
+          "constructor": "Cooper-Climax",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "prince-george-circuit",
+      "name": "Prince George Circuit",
+      "country": "South Africa",
+      "lat": -33.0486,
+      "lng": 27.8736,
+      "locality": "Eastern Cape Province",
+      "total_races": 3,
+      "first_year": 1962,
+      "last_year": 1965,
+      "win_leaders": [
+        {
+          "constructor": "Lotus-Climax",
+          "wins": 2
+        },
+        {
+          "constructor": "BRM",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "zeltweg",
+      "name": "Zeltweg",
+      "country": "Austria",
+      "lat": 47.2039,
+      "lng": 14.7478,
+      "locality": "Styria",
+      "total_races": 1,
+      "first_year": 1964,
+      "last_year": 1964,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "aintree",
+      "name": "Aintree",
+      "country": "UK",
+      "lat": 53.4769,
+      "lng": -2.94056,
+      "locality": "Liverpool",
+      "total_races": 5,
+      "first_year": 1955,
+      "last_year": 1962,
+      "win_leaders": [
+        {
+          "constructor": "Vanwall",
+          "wins": 2
+        },
+        {
+          "constructor": "Lotus-Climax",
+          "wins": 1
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 1
+        },
+        {
+          "constructor": "Cooper-Climax",
+          "wins": 1
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "circuito-da-boavista",
+      "name": "Circuito da Boavista",
+      "country": "Portugal",
+      "lat": 41.1705,
+      "lng": -8.67325,
+      "locality": "Oporto",
+      "total_races": 2,
+      "first_year": 1958,
+      "last_year": 1960,
+      "win_leaders": [
+        {
+          "constructor": "Cooper-Climax",
+          "wins": 1
+        },
+        {
+          "constructor": "Vanwall",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "riverside-international-raceway",
+      "name": "Riverside International Raceway",
+      "country": "USA",
+      "lat": 33.937,
+      "lng": -117.273,
+      "locality": "California",
+      "total_races": 1,
+      "first_year": 1960,
+      "last_year": 1960,
+      "win_leaders": [
+        {
+          "constructor": "Team Lotus",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "avus",
+      "name": "AVUS",
+      "country": "Germany",
+      "lat": 52.4806,
+      "lng": 13.2514,
+      "locality": "Berlin",
+      "total_races": 1,
+      "first_year": 1959,
+      "last_year": 1959,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "monsanto-park-circuit",
+      "name": "Monsanto Park Circuit",
+      "country": "Portugal",
+      "lat": 38.7197,
+      "lng": -9.20306,
+      "locality": "Lisbon",
+      "total_races": 1,
+      "first_year": 1959,
+      "last_year": 1959,
+      "win_leaders": [
+        {
+          "constructor": "Cooper-Climax",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "sebring-international-raceway",
+      "name": "Sebring International Raceway",
+      "country": "USA",
+      "lat": 27.4547,
+      "lng": -81.3483,
+      "locality": "Florida",
+      "total_races": 1,
+      "first_year": 1959,
+      "last_year": 1959,
+      "win_leaders": [
+        {
+          "constructor": "Cooper-Climax",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "ain-diab",
+      "name": "Ain Diab",
+      "country": "Morocco",
+      "lat": 33.5786,
+      "lng": -7.6875,
+      "locality": "Casablanca",
+      "total_races": 1,
+      "first_year": 1958,
+      "last_year": 1958,
+      "win_leaders": [
+        {
+          "constructor": "Vanwall",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "pescara-circuit",
+      "name": "Pescara Circuit",
+      "country": "Italy",
+      "lat": 42.475,
+      "lng": 14.1508,
+      "locality": "Pescara",
+      "total_races": 1,
+      "first_year": 1957,
+      "last_year": 1957,
+      "win_leaders": [
+        {
+          "constructor": "Vanwall",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "circuit-bremgarten",
+      "name": "Circuit Bremgarten",
+      "country": "Switzerland",
+      "lat": 46.9589,
+      "lng": 7.40194,
+      "locality": "Bern",
+      "total_races": 5,
+      "first_year": 1950,
+      "last_year": 1954,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 2
+        },
+        {
+          "constructor": "Alfa Romeo",
+          "wins": 2
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "circuit-de-pedralbes",
+      "name": "Circuit de Pedralbes",
+      "country": "Spain",
+      "lat": 41.3903,
+      "lng": 2.11667,
+      "locality": "Barcelona",
+      "total_races": 2,
+      "first_year": 1951,
+      "last_year": 1954,
+      "win_leaders": [
+        {
+          "constructor": "Ferrari",
+          "wins": 1
+        },
+        {
+          "constructor": "Alfa Romeo",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "buddh-international-circuit",
+      "name": "Buddh International Circuit",
+      "country": "India",
+      "lat": 28.3487,
+      "lng": 77.5331,
+      "locality": "Uttar Pradesh",
+      "total_races": 3,
+      "first_year": 2011,
+      "last_year": 2013,
+      "win_leaders": [
+        {
+          "constructor": "Red Bull",
+          "wins": 3
+        }
+      ]
+    },
+    {
+      "id": "circuit-of-the-americas",
+      "name": "Circuit of the Americas",
+      "country": "USA",
+      "lat": 30.1328,
+      "lng": -97.6411,
+      "locality": "Austin",
+      "total_races": 12,
+      "first_year": 2012,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Mercedes",
+          "wins": 5
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 4
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 2
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "red-bull-ring",
+      "name": "Red Bull Ring",
+      "country": "Austria",
+      "lat": 47.2197,
+      "lng": 14.7647,
+      "locality": "Spielberg",
+      "total_races": 38,
+      "first_year": 1970,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Mercedes",
+          "wins": 7
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 6
+        },
+        {
+          "constructor": "Ferrari",
+          "wins": 5
+        },
+        {
+          "constructor": "Red Bull",
+          "wins": 5
+        },
+        {
+          "constructor": "Team Lotus",
+          "wins": 4
+        }
+      ]
+    },
+    {
+      "id": "sochi-autodrom",
+      "name": "Sochi Autodrom",
+      "country": "Russia",
+      "lat": 43.4057,
+      "lng": 39.9578,
+      "locality": "Sochi",
+      "total_races": 8,
+      "first_year": 2014,
+      "last_year": 2021,
+      "win_leaders": [
+        {
+          "constructor": "Mercedes",
+          "wins": 8
+        }
+      ]
+    },
+    {
+      "id": "baku-city-circuit",
+      "name": "Baku City Circuit",
+      "country": "Azerbaijan",
+      "lat": 40.3725,
+      "lng": 49.8533,
+      "locality": "Baku",
+      "total_races": 8,
+      "first_year": 2016,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Red Bull",
+          "wins": 4
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 3
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "aut-dromo-internacional-do-algarve",
+      "name": "Autódromo Internacional do Algarve",
+      "country": "Portugal",
+      "lat": 37.227,
+      "lng": -8.6267,
+      "locality": "Portimão",
+      "total_races": 2,
+      "first_year": 2020,
+      "last_year": 2021,
+      "win_leaders": [
+        {
+          "constructor": "Mercedes",
+          "wins": 2
+        }
+      ]
+    },
+    {
+      "id": "autodromo-internazionale-del-mugello",
+      "name": "Autodromo Internazionale del Mugello",
+      "country": "Italy",
+      "lat": 43.9975,
+      "lng": 11.3719,
+      "locality": "Mugello",
+      "total_races": 1,
+      "first_year": 2020,
+      "last_year": 2020,
+      "win_leaders": [
+        {
+          "constructor": "Mercedes",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "jeddah-corniche-circuit",
+      "name": "Jeddah Corniche Circuit",
+      "country": "Saudi Arabia",
+      "lat": 21.6319,
+      "lng": 39.1044,
+      "locality": "Jeddah",
+      "total_races": 4,
+      "first_year": 2021,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Red Bull",
+          "wins": 3
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "losail-international-circuit",
+      "name": "Losail International Circuit",
+      "country": "Qatar",
+      "lat": 25.49,
+      "lng": 51.4542,
+      "locality": "Al Daayen",
+      "total_races": 3,
+      "first_year": 2021,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Red Bull",
+          "wins": 2
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "miami-international-autodrome",
+      "name": "Miami International Autodrome",
+      "country": "USA",
+      "lat": 25.9581,
+      "lng": -80.2389,
+      "locality": "Miami",
+      "total_races": 3,
+      "first_year": 2022,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Red Bull",
+          "wins": 2
+        },
+        {
+          "constructor": "McLaren",
+          "wins": 1
+        }
+      ]
+    },
+    {
+      "id": "las-vegas-strip-street-circuit",
+      "name": "Las Vegas Strip Street Circuit",
+      "country": "United States",
+      "lat": 36.1147,
+      "lng": -115.173,
+      "locality": "Las Vegas",
+      "total_races": 2,
+      "first_year": 2023,
+      "last_year": 2024,
+      "win_leaders": [
+        {
+          "constructor": "Red Bull",
+          "wins": 1
+        },
+        {
+          "constructor": "Mercedes",
+          "wins": 1
+        }
+      ]
+    }
+  ]
+}
