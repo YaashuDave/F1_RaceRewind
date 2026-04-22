@@ -1,5 +1,6 @@
 .venv/
 __pycache__/
 *.pyc
+F1_Agent_Brief.docx
 
 # Keep only the spec-compliant dashboard project under version control.
