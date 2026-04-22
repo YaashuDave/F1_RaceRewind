@@ -1,0 +1,58 @@
+.panel svg {
+  display: block;
+}
+
+.panel .axis text,
+.panel .tick text {
+  fill: var(--muted);
+  font-size: 10px;
+}
+
+.panel .axis path,
+.panel .axis line {
+  stroke: rgba(255, 255, 255, 0.12);
+}
+
+.panel .grid line {
+  stroke: rgba(255, 255, 255, 0.08);
+}
+
+.panel .chart-title {
+  font-weight: 700;
+}
+
+.panel .selected {
+  opacity: 1 !important;
+}
+
+.panel .dimmed {
+  opacity: 0.15 !important;
+}
+
+.panel .hovered {
+  stroke-width: 2.5px !important;
+  opacity: 1 !important;
+}
+
+.panel .regulation-line {
+  stroke: var(--red);
+  stroke-dasharray: 5 4;
+  opacity: 0.75;
+}
+
+.panel .inline-label {
+  fill: white;
+  font-size: 11px;
+  font-weight: 700;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.panel .coming-soon-box {
+  fill: #1a1a1a;
+  stroke: var(--red);
+  stroke-width: 2;
+}
+
+.panel .coming-soon-text {
+  fill: white;
+}

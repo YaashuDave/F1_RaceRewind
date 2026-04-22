@@ -1,0 +1,32 @@
+:root {
+  --bg: #0f0f0f;
+  --panel: #1a1a1a;
+  --panel-soft: #202020;
+  --panel-strong: #151515;
+  --text: #f0f0f0;
+  --muted: #a6a6a6;
+  --line: #2f2f2f;
+  --red: #e8002d;
+  --red-soft: rgba(232, 0, 45, 0.28);
+  --accent: #f2f2f2;
+  --chip: #242424;
+  --tooltip: rgba(17, 17, 17, 0.96);
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button, input {
+  font: inherit;
+}

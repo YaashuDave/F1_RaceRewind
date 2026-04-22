@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>F1 Race Rewind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+  <div id="loadingOverlay" class="loading-overlay">
+    <div class="loading-card">
+      <div class="loading-title">F1 Race Rewind</div>
+      <div class="loading-subtitle">Loading processed race data</div>
+    </div>
+  </div>
+
+  <div class="dashboard-root">
+    <header class="app-header">
+      <div class="brand-block">
+        <div class="brand-title">F1 RACE REWIND</div>
+        <div class="brand-subtitle">Visual Analytics Dashboard</div>
+      </div>
+      <div class="season-readout" id="seasonRangeLabel">1950 to 2025</div>
+      <button id="telemetryBtn" class="accent-button" type="button">Compare Telemetry</button>
+    </header>
+
+    <aside class="sidebar">
+      <section class="control-card">
+        <div class="control-title">Season Range</div>
+        <div class="range-row">
+          <span id="minSeasonLabel">1950</span>
+          <span id="maxSeasonLabel">2025</span>
+        </div>
+        <div class="dual-slider">
+          <input id="yearMin" type="range" min="1950" max="2025" step="1" value="1950" />
+          <input id="yearMax" type="range" min="1950" max="2025" step="1" value="2025" />
+        </div>
+      </section>
+
+      <section class="control-card">
+        <div class="control-title">Constructors</div>
+        <div id="constructorList" class="constructor-list"></div>
+      </section>
+
+      <section class="control-card">
+        <div class="control-title">Drivers</div>
+        <input id="driverSearch" class="search-input" type="search" placeholder="Search drivers" />
+        <div id="driverSuggestions" class="suggestions"></div>
+        <div id="selectedDrivers" class="chip-row"></div>
+      </section>
+
+      <section class="control-card insight-card" title="Click to expand">
+        <div class="control-title">Insights <span class="insight-hint">↗ click to expand</span></div>
+        <div id="insightTitle" class="insight-title">Loading insight</div>
+        <div id="insightBody" class="insight-body"></div>
+      </section>
+
+      <button id="resetFilters" class="reset-button" type="button">Reset Filters</button>
+    </aside>
+
+    <main class="main-shell">
+      <div class="main-grid">
+        <section class="panel panel-map">
+          <div class="panel-head">
+            <h2>Geo-Map of Circuits</h2>
+            <span class="panel-tag">circuit selection</span>
+          </div>
+          <div id="geomap" class="chart-slot"></div>
+        </section>
+
+        <section class="panel panel-stream">
+          <div class="panel-head">
+            <h2>Constructor Dominance</h2>
+            <span class="panel-tag">points share heatmap</span>
+          </div>
+          <div id="streamgraph" class="chart-slot"></div>
+        </section>
+
+        <section class="panel panel-bump">
+          <div class="panel-head">
+            <h2>Season Rankings</h2>
+            <span class="panel-tag">round-by-round</span>
+          </div>
+          <div id="bumpchart" class="chart-slot"></div>
+        </section>
+
+        <section class="panel panel-scatter">
+          <div class="panel-head">
+            <h2>Championship Battles</h2>
+            <span class="panel-tag">dominance vs rivalry</span>
+          </div>
+          <div id="scatterplot" class="chart-slot"></div>
+        </section>
+
+        <section class="panel panel-parallel">
+          <div class="panel-head">
+            <h2>Driver Metrics</h2>
+            <span class="panel-tag">parallel coordinates</span>
+          </div>
+          <div id="parallelcoords" class="chart-slot"></div>
+        </section>
+
+        <section class="panel panel-bars">
+          <div class="panel-head">
+            <h2>Reliability &amp; DNF Analysis</h2>
+            <span class="panel-tag">era trend / by constructor</span>
+          </div>
+          <div id="barchart" class="chart-slot"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div id="telemetryPanel" class="telemetry-panel hidden">
+    <div class="telemetry-head">
+      <div>
+        <div class="telemetry-title">Telemetry Overlay</div>
+        <div class="telemetry-badge">Coming Soon</div>
+      </div>
+      <button id="telemetryClose" class="icon-button" type="button">×</button>
+    </div>
+    <div class="telemetry-body">
+      <div class="telemetry-icon" aria-hidden="true">
+        <svg viewBox="0 0 100 100" role="img" aria-label="Telemetry speedometer icon">
+          <circle cx="50" cy="50" r="36"></circle>
+          <path d="M50 50 L78 36"></path>
+          <path d="M22 58 A30 30 0 0 1 78 58"></path>
+        </svg>
+      </div>
+      <p>Select a race and two drivers to compare speed, throttle, and braking traces lap by lap. Powered by FastF1.</p>
+    </div>
+  </div>
+
+  <!-- Insights expand modal -->
+  <div id="insightModal" class="insight-modal hidden" role="dialog" aria-modal="true" aria-label="Expanded insights">
+    <div class="insight-modal-backdrop"></div>
+    <div class="insight-modal-card">
+      <div class="insight-modal-head">
+        <div id="insightModalTitle" class="insight-modal-title">Range summary</div>
+        <button id="insightModalClose" class="icon-button" type="button" aria-label="Close insights">×</button>
+      </div>
+      <div id="insightModalBody" class="insight-modal-body"></div>
+    </div>
+  </div>
+
+  <div id="tooltip" class="tooltip hidden"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

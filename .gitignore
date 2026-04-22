@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+Data/
+*.pyc
+
+# Keep only the spec-compliant dashboard project under version control.
