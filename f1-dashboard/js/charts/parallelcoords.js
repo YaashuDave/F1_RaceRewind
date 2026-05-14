@@ -84,24 +84,39 @@ export function createParallelCoords(selector, source, context) {
       const axis = axisGroups.append('g').attr('transform', `translate(${x(key)},0)`);
       axis.append('g').attr('class', 'axis').call(d3.axisLeft(y).ticks(4));
       const dim = dimensions.find((dimension) => dimension.key === key);
-      axis.append('text').attr('y', -6).attr('text-anchor', 'middle').attr('fill', 'white').attr('font-size', 10).text(dim?.label || key);
+      const label = axis.append('text')
+        .attr('y', -6)
+        .attr('text-anchor', 'middle')
+        .attr('fill', 'white')
+        .attr('font-size', 10)
+        .attr('font-weight', 600)
+        .style('cursor', 'grab')
+        .style('user-select', 'none')
+        .text(dim?.label || key);
       const brush = d3.brushY().extent([[-12, 0], [12, innerHeight]]).on('brush end', (event) => {
         brushSelections.set(key, event.selection ? event.selection.map(y.invert).sort((a, b) => a - b) : null);
         const selectedDrivers = unique(filteredRows(currentState).map((row) => row.driver));
         context.emit('driversSelected', { selectedDrivers });
       });
       axis.append('g').call(brush);
-      axis.call(d3.drag().on('drag', (event) => {
-        const position = x(key) + event.dx;
-        const ranked = order.map((dimension) => ({ dimension, distance: Math.abs(position - x(dimension)) })).sort((a, b) => a.distance - b.distance);
-        const target = ranked[0].dimension;
-        if (target !== key) {
-          order = order.filter((dimension) => dimension !== key);
-          const insertAt = order.indexOf(target);
-          order.splice(insertAt, 0, key);
-          render(currentState);
-        }
-      }));
+      label.call(d3.drag()
+        .on('start', function () { d3.select(this).style('cursor', 'grabbing'); })
+        .on('drag', (event) => {
+          const [pointerX] = d3.pointer(event.sourceEvent, axisGroups.node());
+          let nearest = key;
+          let minDist = Math.abs(pointerX - x(key));
+          order.forEach((dimension) => {
+            const distance = Math.abs(pointerX - x(dimension));
+            if (distance < minDist) { minDist = distance; nearest = dimension; }
+          });
+          if (nearest !== key) {
+            order = order.filter((dimension) => dimension !== key);
+            order.splice(order.indexOf(nearest), 0, key);
+            x.domain(order);
+            render(currentState);
+          }
+        })
+        .on('end', function () { d3.select(this).style('cursor', 'grab'); }));
     });
   }
 

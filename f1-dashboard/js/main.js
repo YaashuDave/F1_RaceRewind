@@ -1,6 +1,6 @@
 import { emit, on } from './brushing.js';
 import { state } from './state.js';
-import { constructorColor } from './utils/colors.js'; // used by updateConstructorList
+import { constructorColor } from './utils/colors.js';
 import { unique } from './utils/helpers.js';
 import { createGeoMap } from './charts/geomap.js';
 import { createHeatmap } from './charts/heatmap.js';
@@ -136,30 +136,36 @@ function renderInsights(circuits, dominance, qualiVsFinish, pitStops, driverMetr
   }
 }
 
-function updateConstructorList(constructors) {
-  const list = document.getElementById('constructorList');
-  list.innerHTML = '';
-  constructors.forEach((constructor) => {
-    const chip = document.createElement('label');
-    chip.className = 'constructor-chip';
-    chip.dataset.constructor = constructor;
-    chip.innerHTML = `<span class="dot" style="background:${constructorColor(constructor)}"></span><span>${constructor}</span>`;
-    chip.addEventListener('click', () => {
-      const next = new Set(state.selectedConstructors);
-      if (next.has(constructor)) {
-        next.delete(constructor);
-      } else {
-        next.add(constructor);
-      }
-      emit('constructorSelected', { selectedConstructors: [...next] });
+function updateSelectedConstructorsView(allConstructors) {
+  const selected = document.getElementById('selectedConstructors');
+  const suggestions = document.getElementById('constructorSuggestions');
+  selected.innerHTML = '';
+  state.selectedConstructors.forEach((name) => {
+    const chip = document.createElement('span');
+    chip.className = 'chip';
+    chip.innerHTML = `<span class="dot" style="background:${constructorColor(name)}"></span><span>${name}</span><button type="button" aria-label="Remove ${name}">×</button>`;
+    chip.querySelector('button').addEventListener('click', () => {
+      emit('constructorSelected', { selectedConstructors: state.selectedConstructors.filter((value) => value !== name) });
     });
-    list.appendChild(chip);
+    selected.appendChild(chip);
   });
-}
 
-function updateConstructorHighlights() {
-  document.querySelectorAll('.constructor-chip').forEach((chip) => {
-    chip.classList.toggle('active', state.selectedConstructors.length === 0 || state.selectedConstructors.includes(chip.dataset.constructor));
+  const query = document.getElementById('constructorSearch').value.trim().toLowerCase();
+  const matches = allConstructors
+    .filter((name) => !state.selectedConstructors.includes(name) && name.toLowerCase().includes(query))
+    .slice(0, 12);
+  suggestions.innerHTML = '';
+  matches.forEach((name) => {
+    const button = document.createElement('button');
+    button.className = 'suggestion';
+    button.type = 'button';
+    button.innerHTML = `<span class="dot" style="background:${constructorColor(name)}"></span><span>${name}</span>`;
+    button.addEventListener('click', () => {
+      if (!state.selectedConstructors.includes(name)) {
+        emit('constructorSelected', { selectedConstructors: [...state.selectedConstructors, name] });
+      }
+    });
+    suggestions.appendChild(button);
   });
 }
 
@@ -210,6 +216,7 @@ function wireControls(allConstructors, allDrivers) {
   });
 
   driverSearch.addEventListener('input', () => updateSelectedDriversView(allDrivers));
+  document.getElementById('constructorSearch').addEventListener('input', () => updateSelectedConstructorsView(allConstructors));
 
   document.getElementById('resetFilters').addEventListener('click', () => {
     emit('reset', {
@@ -221,6 +228,8 @@ function wireControls(allConstructors, allDrivers) {
       highlightedConstructor: null,
       selectedSeason: state.selectedSeason,
     });
+    document.getElementById('constructorSearch').value = '';
+    updateSelectedConstructorsView(allConstructors);
     updateSelectedDriversView(allDrivers);
   });
 
@@ -235,7 +244,7 @@ function wireControls(allConstructors, allDrivers) {
   });
 
   setSeasonReadout();
-  updateConstructorList(allConstructors);
+  updateSelectedConstructorsView(allConstructors);
   updateSelectedDriversView(allDrivers);
 }
 
@@ -275,12 +284,11 @@ async function main() {
 
   on('*', () => {
     setSeasonReadout();
-    updateConstructorHighlights();
+    updateSelectedConstructorsView(constructors);
     updateSelectedDriversView(drivers);
     renderInsights(circuits, dominance, qualiVsFinish, pitStops, driverMetrics);
   });
 
-  updateConstructorHighlights();
   renderInsights(circuits, dominance, qualiVsFinish, pitStops, driverMetrics);
   loadingOverlay.classList.add('hidden');
 }
