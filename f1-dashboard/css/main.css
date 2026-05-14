@@ -114,32 +114,20 @@
 
 /* ─── Chart Grid ─────────────────────────────────────────── */
 /*
-  3-column asymmetric priority grid:
+  3-column equal grid:
 
-  Row 1 (1.05fr): [ GeoMap ·· 2col ][ Bump · 1col ]
-  Row 2 (1.45fr): [ PCP ········ full 3col ]   ← HERO
-  Row 3 (1fr   ): [ Heatmap · 2col ][ Scatter · 1col ][ Bar · 1col ]
-
-  Note: row 3 uses 4 columns so heatmap spans 2 and scatter+bar each get 1.
-  We use a 3-col grid with named areas to keep it clean.
+  Row 1 (1fr  ): [ GeoMap · 1col ][ Bump ··········· 2col ]
+  Row 2 (1.2fr): [ PCP ········· 2col ][ Scatter · 1col ]
+  Row 3 (1fr  ): [ Heatmap ····· 2col ][ Bar ····· 1col ]
 */
 .main-grid {
   display: grid;
-  /*
-    3 columns: left is 2× wider than right two.
-    This gives the world map & heatmap (time-series) more breathing room,
-    while scatter + bar sit compactly on the right.
-
-    Row 1 (1.05fr): [ GeoMap ·· cols 1+2 ][ Bump · col 3 ]
-    Row 2 (1.45fr): [ PCP ···· full 3 cols ]   ← HERO
-    Row 3 (1fr   ): [ Heatmap · col 1 ][ Scatter · col 2 ][ Bar · col 3 ]
-  */
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1.05fr 1.45fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.2fr 1fr;
   grid-template-areas:
-    "map     map     bump"
-    "pcp     pcp     pcp"
-    "heat    scatter bar";
+    "map     bump    bump"
+    "pcp     pcp     scatter"
+    "heat    heat    bar";
   gap: 7px;
   padding: 7px;
   width: 100%;
@@ -331,38 +319,6 @@
   background: linear-gradient(90deg, rgba(232,0,45,0.5), rgba(232,0,45,0.1));
 }
 
-.constructor-list {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  max-height: 120px;
-  overflow-y: auto;
-  padding-right: 4px;
-}
-
-.constructor-chip {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 8px;
-  border-radius: 8px;
-  background: var(--chip);
-  border: 1px solid rgba(255,255,255,0.05);
-  cursor: pointer;
-  font-size: 0.72rem;
-  color: var(--text);
-  user-select: none;
-  width: 100%;
-  transition: border-color 120ms, opacity 120ms;
-}
-
-.constructor-chip.active {
-  border-color: var(--red);
-  box-shadow: inset 0 0 0 1px rgba(232,0,45,0.18);
-}
-
-.constructor-chip:not(.active) { opacity: 0.35; }
-
 .dot {
   width: 9px;
   height: 9px;
@@ -395,6 +351,9 @@
 }
 
 .suggestion {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   border: 1px solid rgba(255,255,255,0.08);
   background: #1e1e1e;
   color: var(--text);
