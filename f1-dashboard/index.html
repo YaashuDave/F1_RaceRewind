@@ -6,7 +6,7 @@
   <title>F1 Race Rewind</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/theme.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/components.css" />
@@ -20,15 +20,18 @@
   </div>
 
   <div class="dashboard-root">
+
+    <!-- ── Header ───────────────────────────────────────────── -->
     <header class="app-header">
       <div class="brand-block">
         <div class="brand-title">F1 RACE REWIND</div>
         <div class="brand-subtitle">Visual Analytics Dashboard</div>
       </div>
-      <div class="season-readout" id="seasonRangeLabel">1950 to 2025</div>
+      <div class="season-readout" id="seasonRangeLabel">1950 — 2025</div>
       <button id="telemetryBtn" class="accent-button" type="button">Compare Telemetry</button>
     </header>
 
+    <!-- ── Sidebar ───────────────────────────────────────────── -->
     <aside class="sidebar">
       <section class="control-card">
         <div class="control-title">Season Range</div>
@@ -49,13 +52,16 @@
 
       <section class="control-card">
         <div class="control-title">Drivers</div>
-        <input id="driverSearch" class="search-input" type="search" placeholder="Search drivers" />
+        <input id="driverSearch" class="search-input" type="search" placeholder="Search drivers…" />
         <div id="driverSuggestions" class="suggestions"></div>
         <div id="selectedDrivers" class="chip-row"></div>
       </section>
 
       <section class="control-card insight-card" title="Click to expand">
-        <div class="control-title">Insights <span class="insight-hint">↗ click to expand</span></div>
+        <div class="control-title">
+          Insights
+          <span class="insight-hint">↗ expand</span>
+        </div>
         <div id="insightTitle" class="insight-title">Loading insight</div>
         <div id="insightBody" class="insight-body"></div>
       </section>
@@ -63,59 +69,82 @@
       <button id="resetFilters" class="reset-button" type="button">Reset Filters</button>
     </aside>
 
+    <!-- ── Main grid ──────────────────────────────────────────── -->
     <main class="main-shell">
       <div class="main-grid">
+
+        <!-- Row 1 col 1–2: Geo-Map (wide) -->
         <section class="panel panel-map">
           <div class="panel-head">
-            <h2>Geo-Map of Circuits</h2>
-            <span class="panel-tag">circuit selection</span>
+            <div class="panel-head-left">
+              <h2>Circuit Map</h2>
+            </div>
+            <span class="panel-tag">click to select circuit</span>
           </div>
           <div id="geomap" class="chart-slot"></div>
         </section>
 
-        <section class="panel panel-stream">
-          <div class="panel-head">
-            <h2>Constructor Dominance</h2>
-            <span class="panel-tag">points share heatmap</span>
-          </div>
-          <div id="streamgraph" class="chart-slot"></div>
-        </section>
-
+        <!-- Row 1 col 3: Bump Chart (tall, needs height for rank rows) -->
         <section class="panel panel-bump">
           <div class="panel-head">
-            <h2>Season Rankings</h2>
-            <span class="panel-tag">round-by-round</span>
+            <div class="panel-head-left">
+              <h2>Season Rankings</h2>
+            </div>
+            <span class="panel-tag">round-by-round positions</span>
           </div>
           <div id="bumpchart" class="chart-slot"></div>
         </section>
 
+        <!-- Row 2 full-width: PCP — HERO -->
+        <section class="panel panel-parallel">
+          <div class="panel-head">
+            <div class="panel-head-left">
+              <span class="panel-size-badge">Primary</span>
+              <h2>Driver Performance Profile</h2>
+            </div>
+            <span class="panel-tag">parallel coordinates · drag axes · brush to filter</span>
+          </div>
+          <div id="parallelcoords" class="chart-slot"></div>
+        </section>
+
+        <!-- Row 3 col 1–2: Constructor Dominance (wide time-series) -->
+        <section class="panel panel-stream">
+          <div class="panel-head">
+            <div class="panel-head-left">
+              <h2>Constructor Dominance</h2>
+            </div>
+            <span class="panel-tag">points share over seasons</span>
+          </div>
+          <div id="streamgraph" class="chart-slot"></div>
+        </section>
+
+        <!-- Row 3 col 2: Championship Battles -->
         <section class="panel panel-scatter">
           <div class="panel-head">
-            <h2>Championship Battles</h2>
+            <div class="panel-head-left">
+              <h2>Championship Battles</h2>
+            </div>
             <span class="panel-tag">dominance vs rivalry</span>
           </div>
           <div id="scatterplot" class="chart-slot"></div>
         </section>
 
-        <section class="panel panel-parallel">
-          <div class="panel-head">
-            <h2>Driver Metrics</h2>
-            <span class="panel-tag">parallel coordinates</span>
-          </div>
-          <div id="parallelcoords" class="chart-slot"></div>
-        </section>
-
+        <!-- Row 3 col 3: Reliability & DNF -->
         <section class="panel panel-bars">
           <div class="panel-head">
-            <h2>Reliability &amp; DNF Analysis</h2>
-            <span class="panel-tag">era trend / by constructor</span>
+            <div class="panel-head-left">
+              <h2>Reliability & DNF</h2>
+            </div>
+            <span class="panel-tag">era trend · by constructor</span>
           </div>
           <div id="barchart" class="chart-slot"></div>
         </section>
+
       </div>
     </main>
   </div>
 
+  <!-- ── Telemetry side-panel ───────────────────────────────── -->
   <div id="telemetryPanel" class="telemetry-panel hidden">
     <div class="telemetry-head">
       <div>
@@ -126,17 +155,17 @@
     </div>
     <div class="telemetry-body">
       <div class="telemetry-icon" aria-hidden="true">
-        <svg viewBox="0 0 100 100" role="img" aria-label="Telemetry speedometer icon">
-          <circle cx="50" cy="50" r="36"></circle>
-          <path d="M50 50 L78 36"></path>
-          <path d="M22 58 A30 30 0 0 1 78 58"></path>
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="36"/>
+          <path d="M50 50 L78 36"/>
+          <path d="M22 58 A30 30 0 0 1 78 58"/>
         </svg>
       </div>
-      <p>Select a race and two drivers to compare speed, throttle, and braking traces lap by lap. Powered by FastF1.</p>
+      <p>Select a race and two drivers to compare speed, throttle, and braking traces lap by lap.</p>
     </div>
   </div>
 
-  <!-- Insights expand modal -->
+  <!-- ── Insights modal ────────────────────────────────────── -->
   <div id="insightModal" class="insight-modal hidden" role="dialog" aria-modal="true" aria-label="Expanded insights">
     <div class="insight-modal-backdrop"></div>
     <div class="insight-modal-card">
